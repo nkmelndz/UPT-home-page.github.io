@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1130px auto;
+  grid-template-rows: 140px 45px 1470px 600px;
+}
+
+header {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+}
+
+#logo_container {
+  grid-area: 1 / 1 / 1 / 2;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+header a img {
+  height: 100px;
+}
+
+header ul {
+  grid-area: 1 / 2 / 1 / 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li a {
+  margin-left: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(116, 117, 118, 0.841);
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: black;
+}
+
+#content{
+  grid-area: 1 / 2 / 3 / 3;
+  display: grid;
+  grid-template-rows: 90px auto ;
+  grid-template-columns: 325px 680px auto;
+}
+
+
+.postulantes{
+  visibility: hidden;
+}
+
+.postulantes.showpostulantes{
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: rgb(8, 8, 8);
+  color: aliceblue;
+  padding: 30px;
+  z-index: 5;
+  visibility: visible;
+}
+
+.estudiantes{
+  visibility: hidden;
+}
+
+.estudiantes.showestudiantes{
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: aqua;
+  z-index: 5;
+  visibility: visible;
+}
+
+
+
+
+
+#input_container {
+  grid-area: 1 / 3 / 1 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header input {
+  width: 100px;
+  height: 30px;
+}
+
+#lenguage {
+  background-color: rgb(0, 0, 0);
+  width: 90px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  align-self: flex-start;
+  position: absolute;
+}
+#lenguage a {
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+nav {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: rgb(231, 231, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li a {
+  margin: 7px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: rgb(50, 51, 114);
+}
+
+main {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-rows: 550px 920px;
+}
+
+#agenda {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: darkgray;
+}
+
+#agenda img {
+  height: 550px;
+  width: 1130px;
+}
+
+section {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: black;
+}
+
+footer {
+  grid-area: 4 / 2 / 5 / 3;
+  background-color: aqua;
+}
