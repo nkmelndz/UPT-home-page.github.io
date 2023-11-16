@@ -1,84 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UPT</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="mi_script.js"></script>
-</head>
-<body>
+  </head>
 
-    <div id="content" >
-        <ul class="postulantes" >
-            Postulantes 
-            <li>Modalidades de dmision</li>
-            <li>Categorias de pago</li>
-            <li>Simulador de pensiones</li>
-            <li>Inscripcion en linea</li>
-            <li>Porgrama de nivelacion escolar</li>
-        </ul> 
-        <ul class="estudiantes">
-            Estudiantes
-            <li>Matricula</li>
-            <li>Informacion Academica, calendarios y tramites</li>
-            <li>Bienestar</li>
-            <li>Relaciones Internacionales</li>
-            <li>Emprendimiento</li>
-            <li>Ulima Laboral</li>
-            <li>Consorcio de Universidades</li>
-        </ul>
+  <body>
+
+    <div id="content">
+      <ul class="postulantes">
+        <div class="triangulo"></div>
+        <b>• Postulantes</b>
+        <li><a href="#">Modalidades de admision</a></li>
+        <li><a href="#">Categorias de pago</a></li>
+        <li><a href="#">Simulador de pensiones</a></li>
+        <li><a href="#">Inscripcion en linea</a></li>
+        <li><a href="#">Programa de nivelacion escolar</a></li>
+      </ul>
+
+      <ul class="estudiantes">
+        <div class="triangulo"></div>
+        <b>• Estudiantes</b>
+        <li><a href="#">Matricula</a></li>
+        <li><a href="#">Informacion Academica, calendarios y tramites</a></li>
+        <li><a href="#">Bienestar</a></li>
+        <li><a href="#">Relaciones Internacionales</a></li>
+        <li><a href="#">Emprendimiento</a></li>
+        <li><a href="#">Consorcio de Universidades</a></li>
+      </ul>
+
+      <ul class="egresados">
+        <div class="triangulo"></div>
+        <b>• Egresados</b>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Centro Deportivo</a></li>
+        <li><a href="#">Relaciones Internacionales</a></li>
+        <li><a href="#">Servicio de Biblioteca</a></li>
+        <li><a href="#">Tramites de egresados</a></li>
+      </ul>
+
+      <ul class="empleabilidad">
+        <div class="triangulo"></div>
+        <b>• Centro de Empleabilidad</b>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">UPT Laboral</a></li>
+        <li><a href="#">Tramites para Practicas</a></li>
+        <li><a href="#">Reglamento de Practicas</a></li>
+        <li><a href="#">Servicios para alumnos y graduados</a></li>
+      </ul>
+
+      <ul class="intranet">
+        <div class="triangulo"></div>
+        <b>• Intranet</b>
+        <li><a href="#">Mi UPT</a></li>
+        <li><a href="https://aulavirtual.upt.edu.pe/">Aula Virtual</a></li>
+        <li><a href="#">UPT laboral</a></li>
+        <li><a href="#">Correo Alumnos / Egresados</a></li>
+        <li><a href="#">Correo Docentes Administrativos</a></li>
+      </ul>
     </div>
 
     <header>
-        <div id="logo_container">
-            <a href="#"><img src="logo.png" alt="logo_upt" id="logo_upt"></a>
+      <div id="logo_container">
+        <a href="#"><img src="logo.png" alt="logo_upt" id="logo_upt" /></a>
+      </div>
+      <ul>
+        <li>
+            <a href="#" id="postulantes">POSTULANTES</a>
+        </li>
+        <li><a href="#" id="estudiantes">ESTUDIANTES</a></li>
+        <li><a href="#" id="egresados">EGRESADOS</a></li>
+        <li><a href="#" id="empleabilidad">CENTRO DE EMPLEABILIDAD</a></li>
+        <li><a href="#" style="color: rgb(39, 40, 93)" id="intranet">INTRANET</a></li>
+      </ul>
+      <div id="input_container">
+        <div id="lenguage">
+          <a href="#">EN</a>
+          <a href="#">ES</a>
         </div>
-        <ul>
-            <li>
-                <a href="#" id="postulantes">POSTULANTES</a>                
-            </li>
-            <li>
-                <a href="#" id="estudiantes">ESTUDIANTES</a>
-    
-            </li>
-            <li><a href="#">EGRESADOS</a></li>
-            <li><a href="#">CENTRO DE EMPLEABILIDAD</a></li>
-            <li ><a href="#" style="color: rgb(39, 40, 93);">INTRANET</a></li>
-        </ul>
-        <div id="input_container">
-            <div id = "lenguage">
-                <a href="#">EN</a>
-                <a href="#">ES</a>
-            </div>
-            <input type="search" name="Buscar" id="search" placeholder=" Buscar ">
-        </div>
+        <input type="search" name="Buscar" id="search" placeholder=" Buscar " />
+      </div>
     </header>
 
-    
-    
     <nav>
-        <ul> 
-            <li><a href="#">ACERCA DE</a></li>
-            <li><a href="#">ADMISION</a></li>
-            <li><a href="#">PREGRADO</a></li>
-            <li><a href="#">POSGRADO</a></li>
-            <li><a href="#">EDUC. EJECUTIVA</a></li>
-            <li><a href="#">INTERNACIONAL</a></li>
-            <li><a href="#">BIBLIOTECA</a></li>
-            <li><a href="#">INVESTIGACION</a></li>
-            <li><a href="#">PUBLICACIONES</a></li>
-        </ul>
+      <ul>
+        <li><a href="https://www.upt.edu.pe/upt/web/home/contenido/100000000/65519409">ACERCA DE</a></li>
+        <li><a href="https://www.upt.edu.pe/upt/web/home/contenido/102/86094055">ADMISION</a></li>
+        <li>
+          <a href="#" id="pregrado" style="padding-bottom: 5px;">PREGRADO</a>
+          
+        </li>
+        <li><a href="https://postgrado.upt.edu.pe/web/#/">POSGRADO</a></li>
+        <li><a href="#">EDUC. EJECUTIVA</a></li>
+        <li><a href="#">INTERNACIONAL</a></li>
+        <li><a href="#">BIBLIOTECA</a></li>
+        <li><a href="#">INVESTIGACION</a></li>
+        <li><a href="#">PUBLICACIONES</a></li>
+      </ul>
     </nav>
+    <div class="left"></div>
+    <div class="right"></div>
     <main>
-        <div id="agenda">
-            <img src="banner.png" alt="banner">
+      <div id="transicion">
+        <ul>
+          <li><img src="banner.png" alt="banner"/></li>
+          <li><img src="slide2.png" alt="slide2" /></li>
+          <li><img src="slide3.png" alt="slide3" /></li>
+          <li><img src="slide4.jpg" alt="slide4"></li>
+        </ul>
+      </div>
+      <div class="pregrado">
+        <div class="triangulo"></div>
+        <div class="faing">
+          • Facultad de Ingenieria
+          <ul>
+            <li><a href="#">Ingenieria Civil</a></li>
+            <li><a href="#">Ingenieria de Sistemas</a></li>
+            <li><a href="#">Ingenieria Electronica</a></li>
+            <li><a href="#">Ingenieria Industrial</a></li>
+            <li><a href="#">Ingeniera Ambiental</a></li>
+            <li><a href="#">Ingeniera Agroindustrial</a></li>
+          </ul>
         </div>
-        <section>
-
-        </section>
+        <div class="faedcoh">
+          • Facultad de Educacion, Ciencias de la Comunicacion y Humanidades
+          <ul>
+            <li><a href="#">Ciencias de la Comunicacion</a></li>
+            <li><a href="#">Humanidades - Psicologia</a></li>
+            <li><a href="#">Educacion</a></li>
+          </ul>
+        </div>
+        <div class="fade">
+          • Facultad de Derecho y Ciencias Politicas
+          <ul>
+            <li><a href="#">Facultad de Derecho</a></li>
+          </ul>
+        </div>
+        <div class="facsa">
+          • Facultad de Ciencias de la Salud
+          <ul>
+            <li><a href="#">Medicina Humana</a></li>
+            <li><a href="#">Odontologia</a></li>
+            <li><a href="#">Tecnologia Medica</a></li>
+          </ul>
+        </div>
+        <div class="facem">
+          • Facultad de Ciencias Empresariales
+          <ul>
+            <li><a href="#">Administracion Turistico-Hotelera</a></li>
+            <li><a href="#">Administracion de Negocios Internacionales</a></li>
+            <li><a href="#">Ciencias Contables y Financieras</a></li>
+            <li><a href="#">Ingeniera Comercial</a></li>
+            <li><a href="#">Economia y Microfinanzas</a></li>
+          </ul>
+        </div>
+        <div class="fau">
+          • Facultad de Arquitectura y Urbanismo
+          <ul>
+            <li><a href="#">Arquitectura</a></li>
+          </ul>
+        </div>
+      </div>
+      <section>
+        <div class="encabezado"></div>
+        <div class="noticias">
+            <div><h3>NOTICIAS</h3></div>
+            <div class="not1">
+                <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px;">14 DE NOVIEMBRE DE 2023</p>
+                <img src="noticia1.jpg" alt="noticia1" style="width: 100%; margin-top: 10px; margin-bottom: 8px;">
+                <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+                <p style="color: rgb(19, 19, 73); font-size: 15px; font-weight: 1000;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE</p>
+                <p style="color: rgb(100, 100, 100); font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 5px;padding-bottom: 30px ;font-size: 14px;font-weight: 100;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui praesentium dolorum! Sapiente minus velit distinctio veniam sint, minima eveniet odit?</p>
+            </div>
+            <div class="not2">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px;">14 DE NOVIEMBRE DE 2023</p>
+                <img src="noticia1.jpg" alt="noticia1" style="width: 100%; margin-top: 10px; margin-bottom: 8px;">
+                <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+                <p style="color: rgb(19, 19, 73); font-size: 15px; font-weight: 1000;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE</p>
+                <p style="color: rgb(100, 100, 100); font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 5px;padding-bottom: 30px ;font-size: 14px;font-weight: 100;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui praesentium dolorum! Sapiente minus velit distinctio veniam sint, minima eveniet odit?</p>
+            </div>
+            <div class="not3">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="not4">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="not5">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="not6">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="input">
+              <a href="#"style="color:black;text-decoration: none; font-size: 13px;padding: 10px;background-color: white; border:1px solid rgb(0, 0, 0);">VER MÁS</a>
+            </div>
+        </div>
+        <div class="entrevistas">
+            <div><h3>ENTREVISTAS</h3></div>
+            <div class="ent1">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <img src="noticia1.jpg" alt="noticia1" style="width: 100%; margin-top: 10px; margin-bottom: 8px;">
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 15px; font-weight: 1000;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE</p>
+              <p style="color: rgb(100, 100, 100); font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 5px;padding-bottom: 30px ;font-size: 14px;font-weight: 100;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui praesentium dolorum! Sapiente minus velit distinctio veniam sint, minima eveniet odit?</p>
+            </div>
+          <div class="ent2">
+            <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+            <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+            <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+          </div>
+          <div class="ent3">
+            <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+            <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+            <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+          </div>
+          <div class="input">
+            <a href="#"style="color:black;text-decoration: none; font-size: 13px;padding: 10px;background-color: white; border:1px solid rgb(0, 0, 0);">VER MÁS</a>
+          </div>
+        </div>
+        <div class="agenda">
+            <div><h3>AGENDA</h3></div>
+            <div class="age1">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <img src="noticia1.jpg" alt="noticia1" style="width: 100%; margin-top: 10px; margin-bottom: 8px;">
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 15px; font-weight: 1000;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE</p>
+              <p style="color: rgb(100, 100, 100); font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 5px;padding-bottom: 30px ;font-size: 14px;font-weight: 100;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui praesentium dolorum! Sapiente minus velit distinctio veniam sint, minima eveniet odit?</p>
+            </div>
+            <div class="age2">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="age3">
+              <p style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 10px; margin-bottom: 10px;">14 DE NOVIEMBRE DE 2023</p>
+              <p style="color: rgb(19, 19, 73); font-weight: 700; margin-bottom: 10px;">ECONOMIA</p>
+              <p style="color: rgb(19, 19, 73); font-size: 18px; font-weight: 700;border-bottom-style: solid; border-color: rgb(130, 130, 130);border-bottom-width: 1px; padding-bottom: 30px;">INVESTIGADORES PRESENTARON ESTUDIOS SOBRE...</p>
+            </div>
+            <div class="input">
+              <a href="#"style="color:black;text-decoration: none; font-size: 13px;padding: 10px;background-color: white; border:1px solid rgb(0, 0, 0);">VER MÁS</a>
+            </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-</body>
+    <footer>
+      <div class="universidad">
+        <ul style="list-style: none;">
+        <h4 style="color: rgb(250, 190, 0); font-family: sans-serif; font-size: 14px; margin-bottom: 20px;">LA UNIVERSIDAD</h4>
+        <li><a href="#">Informacion Academica</a></li>
+        <li><a href="#">Mesa de Partes Virtual</a></li>
+        <li><a href="#">Sala de cine</a></li>
+        <li><a href="#">Transparencia universitaria</a></li>
+        <li><a href="#">Libro virtual de reclamaciones</a></li>
+        <li><a href="#">Cambiar de contraseña</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Consorcio de Universidades</a></li>
+        <li><a href="#">Defensoria Universitaria</a></li>
+        <li><a href="#">Seguridad y Salud en el trabajo</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Podcasts</a></li>
+        </ul> 
+      </div>
+      <div class="estudios">
+        <ul style="list-style: none;">
+          <h4 style="color: rgb(250, 190, 0); font-family: sans-serif; font-size: 14px;margin-bottom: 20px;">ESTUDIOS</h4>
+          <li><a href="#">Informacion Academica</a></li>
+          <li><a href="#">Mesa de Partes Virtual</a></li>
+          <li><a href="#">Sala de cine</a></li>
+          <li><a href="#">Transparencia universitaria</a></li>
+          <li><a href="#">Libro virtual de reclamaciones</a></li>
+          <li><a href="#">Cambiar de contraseña</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Consorcio de Universidades</a></li>
+          <li><a href="#">Defensoria Universitaria</a></li>
+          <li><a href="#">Seguridad y Salud en el trabajo</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Podcasts</a></li>
+        </ul> 
+      </div>
+      <div class="departamentos">
+        <ul style="list-style: none;">
+          <h4 style="color: rgb(250, 190, 0); font-family: sans-serif; font-size: 14px;margin-bottom: 20px;">DEPARTAMENTOS</h4>
+          <li><a href="#">Informacion Academica</a></li>
+          <li><a href="#">Mesa de Partes Virtual</a></li>
+          <li><a href="#">Sala de cine</a></li>
+          <li><a href="#">Transparencia universitaria</a></li>
+          <li><a href="#">Libro virtual de reclamaciones</a></li>
+          <li><a href="#">Cambiar de contraseña</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Consorcio de Universidades</a></li>
+          <li><a href="#">Defensoria Universitaria</a></li>
+          <li><a href="#">Seguridad y Salud en el trabajo</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Podcasts</a></li>
+        </ul> 
+      </div>
+      <div class="centros">
+        <ul style="list-style: none;">
+          <h4 style="color: rgb(250, 190, 0); font-family: sans-serif; font-size: 14px; margin-bottom: 20px;">CENTROS E INSTITUTOS</h4>
+          <li><a href="#">Informacion Academica</a></li>
+          <li><a href="#">Mesa de Partes Virtual</a></li>
+          <li><a href="#">Sala de cine</a></li>
+          <li><a href="#">Transparencia universitaria</a></li>
+          <li><a href="#">Libro virtual de reclamaciones</a></li>
+          <li><a href="#">Cambiar de contraseña</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Consorcio de Universidades</a></li>
+          <li><a href="#">Defensoria Universitaria</a></li>
+          <li><a href="#">Seguridad y Salud en el trabajo</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Podcasts</a></li>
+        </ul> 
+      </div>
+      <div class="contactenos">
+        <h4 style="color: rgb(250, 190, 0); font-family: sans-serif; font-size: 14px; margin-bottom: 20px;">CONTACTENOS</h4>
+        <p>Redes Sociales</p>
+        <div class="enlaces">
+        <a href="#"><img src="facebook.png" alt="facebook"></a>
+        <a href="#"><img src="twitter.png" alt="twitter"></a>
+        <a href="#"><img src="youtube.png" alt="youtube"></a>
+        <a href="#"><img src="instagram.png" alt="instagram"></a>
+        </div>
+        <p>Campus Capanique, Av. Jorge Basadre </p>
+        <p>Grohmann s/n Pocollay - Tacna</p>
+        <p>Rectorado, Av. Bolognesi Nº 1177</p>
+        <p>Central Telef: 52 427212</p>
+        <p></p>
+        <p>Universidad Privada de Tacna © 2023</p>
+        <p></p>
+        <p>Todos los derechos reservados</p>
+          
+          
+          
+      </div>
+    </footer>
+  </body>
 </html>
