@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 20px 50px 500px 300px;
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(131, 76, 10);
+  }

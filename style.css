@@ -61,12 +61,12 @@ header ul li a:hover {
 .postulantes .triangulo{
   width: 0px;
   height: 0px;
-  border-bottom: 13px solid black;
+  border-bottom: 13px solid rgb(8, 8, 8);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  position: absolute;
-  top: -12px;
-  left: 55px;
+  position: relative;
+  top: -45px;
+  left: 20px;
 
 }
 .postulantes.showpostulantes{
@@ -97,12 +97,12 @@ header ul li a:hover {
 .estudiantes .triangulo{
   width: 0px;
   height: 0px;
-  border-bottom: 13px solid black;
+  border-bottom: 13px solid rgb(8, 8, 8);;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  position: absolute;
-  top: -12px;
-  left: 180px;
+  position: relative;
+  top: -45px;
+  left: 140px;
 }
 .estudiantes.showestudiantes{
   grid-area: 2 / 2 / 3 / 3;
@@ -134,12 +134,12 @@ header ul li a:hover {
 .egresados .triangulo{
   width: 0px;
   height: 0px;
-  border-bottom: 13px solid black;
+  border-bottom: 13px solid rgb(8, 8, 8);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  position: absolute;
-  top: -12px;
-  left: 298px;
+  position: relative;
+  top: -45px;
+  left: 255px;
 }
 .egresados.showegresados{
   grid-area: 2 / 2 / 3 / 3;
@@ -171,12 +171,12 @@ header ul li a:hover {
 .empleabilidad .triangulo{
   width: 0px;
   height: 0px;
-  border-bottom: 13px solid black;
+  border-bottom: 13px solid rgb(8, 8, 8);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  position: absolute;
-  top: -12px;
-  left: 460px;
+  position: relative;
+  top: -45px;
+  left: 420px;
 }
 
 .empleabilidad.showempleabilidad{
@@ -212,9 +212,9 @@ header ul li a:hover {
   border-bottom: 13px solid black;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  position: absolute;
-  top: -12px;
-  right: 20px;
+  position: relative;
+  top: -45px;
+  right: -580px;
 }
 .intranet.showintranet{
   grid-area: 2 / 2 / 3 / 3;
@@ -667,4 +667,20 @@ footer .enlaces{
   font-family: sans-serif;
   font-size: 14px;
   margin-top: 7px;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 20px 50px 500px 300px;
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: rgb(131, 76, 10);
+  }
+
+  
+
 }
